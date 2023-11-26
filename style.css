@@ -1,0 +1,11 @@
+.panel {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.panel.is-active {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+}
