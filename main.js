@@ -51,5 +51,5 @@ const tabpanel = (elements) => {
 
 window.addEventListener('DOMContentLoaded', () => {
   const targets = document.querySelectorAll('.js-tabpanel-tab');
-  if(targets) tabpanel(targets);
+  if(targets.length > 0) tabpanel(targets);
 });
