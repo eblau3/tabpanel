@@ -1,10 +1,15 @@
+.tab.is-active {
+  background-color: teal;
+  color: #fff;
+}
+
 .panel {
   visibility: hidden;
   opacity: 0;
   height: 0;
 }
 
-.panel.is-active {
+.panel.is-visible {
   visibility: visible;
   height: auto;
   opacity: 1;

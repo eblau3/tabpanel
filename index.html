@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tabpanel</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,19 +12,14 @@
     }
   </style>
   <link rel="stylesheet" href="style.css">
+  <script src="tabpanel.js" defer></script>
 </head>
 <body>
-
-  <button class="js-tabpanel-tab" data-target="panelname1">Tab1</button>
-  <button class="js-tabpanel-tab" data-target="panelname2">Tab1</button>
-
-  <div class="panel js-tabpanel-panel" data-name="panelname1">
-    <p>Tab1<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis praesentium nam numquam, temporibus distinctio maiores libero cumque in eaque voluptate? Unde, cumque aut fuga autem eius tenetur ab. Delectus?</p>
+  <div class="js-tabpanel" role="tablist">
+    <button class="tab js-tabpanel-tab" id="tab-1" role="tab" aria-controls="panel-1" aria-selected="false">タブ-1</button>
+    <button class="tab js-tabpanel-tab" id="tab-2" role="tab" aria-controls="panel-2" aria-selected="false">タブ-2</button>
+    <div class="panel js-tabpanel-panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1" aria-hidden="true"><img src="https://placehold.jp/600x400.png?text=パネル-1"></div>
+    <div class="panel js-tabpanel-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true"><img src="https://placehold.jp/600x400.png?text=パネル-2"></div>
   </div>
-  <div class="panel js-tabpanel-panel" data-name="panelname2">
-    <p>Tab2<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga veritatis praesentium nam numquam, temporibus distinctio maiores libero cumque in eaque voluptate? Unde, cumque aut fuga autem eius tenetur ab. Delectus?</p>
-  </div>
-  
-  <script src="main.js"></script>
 </body>
 </html>
